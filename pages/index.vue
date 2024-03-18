@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import {useTestStore} from "~/stores/testStore";
 
 </script>
 
@@ -7,6 +8,8 @@
     <Test />
     <TestDir />
     <TestDirSecondComponent />
+    <button @click="useTestStore().testFunc">232</button>
+    {{ useTestStore().test }}
     indexPage
   </div>
 </template>
