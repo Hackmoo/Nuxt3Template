@@ -9,6 +9,7 @@ import {useTestStore} from "~/stores/testStore";
     <TestDir />
     <TestDirSecondComponent />
     <button @click="useTestStore().testFunc">232</button>
+    <NuxtLink to="/testPage">link to another page</NuxtLink>
     {{ useTestStore().test }}
     indexPage
   </div>
