@@ -1,6 +1,6 @@
 <script setup lang="ts">
 definePageMeta({
-  layout: 'custom'
+  layout: 'custom' // It is used for changing layout of the component
 })
 </script>
 
