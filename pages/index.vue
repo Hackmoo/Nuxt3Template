@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {useTestStore} from "~/stores/testStore";
+import { useTestStore } from "~/stores/testStore";
 
 </script>
 
@@ -16,6 +16,4 @@ import {useTestStore} from "~/stores/testStore";
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
