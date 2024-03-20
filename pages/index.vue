@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useTestStore } from "~/stores/testStore";
-
+import { useTestStore } from '@/stores/testStore'
+const { testFunction } = useTestComposable()
 </script>
 
 <template>
@@ -8,7 +8,8 @@ import { useTestStore } from "~/stores/testStore";
     <Test />
     <TestDir />
     <TestDirSecondComponent />
-    <button @click="useTestStore().testFunc">232</button>
+    <button @click="useTestStore().testFunc">Test store </button>
+    <button @click="testFunction"> Test composables </button>
     <NuxtLink to="/testPage">link to another page</NuxtLink>
     <img src="@/assets/Untitled.png" alt="">
     {{ useTestStore().test }}
