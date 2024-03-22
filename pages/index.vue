@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { useTestStore } from '@/stores/testStore'
 const { testFunction } = useTestComposable()
+const { $sayHello } = useNuxtApp()
+$sayHello('3')
 </script>
 
 <template>
