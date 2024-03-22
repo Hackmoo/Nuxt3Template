@@ -3,7 +3,8 @@ useHead({
   title: "test meta title"
 })
 definePageMeta({
-  layout: 'custom' // It is used for changing layout of the component
+  layout: 'custom', // It is used for changing layout of the component
+  middleware: 'test-middleware' // defines particular middleware on the page
 })
 </script>
 
