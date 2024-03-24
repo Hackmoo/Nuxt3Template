@@ -1,4 +1,5 @@
 import { defineStore } from 'pinia'
+import api from '~/api'
 
 export const useTestStore = defineStore('test', {
     state: () => ({
@@ -8,8 +9,9 @@ export const useTestStore = defineStore('test', {
         doubleCount: (state) => state.test.slice(0, 1)
     },
     actions: {
-        testFunc() {
-            console.log(this.test)
+        async testFunc() {
+            const resp = await api.apiTemplate.get()
+            if(resp && resp.data) this.test = resp.data
         },
     },
 })

@@ -2,7 +2,7 @@
 import { useTestStore } from '@/stores/testStore'
 const { testFunction } = useTestComposable()
 const { $sayHello } = useNuxtApp()
-$sayHello('3')
+$sayHello('3') // it's a plugin. It is used always with a $ at the start
 </script>
 
 <template>
